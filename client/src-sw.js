@@ -36,8 +36,8 @@ registerRoute(
         statuses: [0, 200],
       }),
       new ExpirationPlugin({
-        maxEntries: 60,
-        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+        maxEntries: 60, // up to 60 images can be cached
+        maxAgeSeconds: 30 * 24 * 60 * 60, // The cache will only remain for 30 days
       }),
     ],
   })
