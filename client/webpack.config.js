@@ -23,7 +23,10 @@ module.exports = () => {
         title: 'Just Another Text Editor'
       }),
     
-      new GenerateSW(),
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'service-worker.js',
+      }),
       new WebpackPwaManifest({
         name: 'Just Another Text Editor',
         short_name: 'JATE',
@@ -32,11 +35,13 @@ module.exports = () => {
         theme_color: '#225ca3',
         start_url: './',
         publicPath: './',
+        fingerprints: false,
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
+            
           },
         ],
       }),
