@@ -1,9 +1,9 @@
- # <img src="./client/src/images/logo.png" alt= "JATE Logo" width="95" height="95">  Just Another Text Editor (JATE) 
+# <img src="./client/src/images/logo.png" alt="JATE Logo" width="95px;" height="95px"> Just Another Text Editor (JATE)
 
 ![MIT license](https://img.shields.io/badge/license-MIT-blue)
 ## Description 
 
-This blog allows users to create an account and write tech related blog post. users can update and delete their post as they see fit and can view and comment on post by others.
+JATE is a test editor that will keep your work saved. JATE also offers javascript syntax highlighting so you can write out your javascript code and be able to read it with ease. 
 
 ## Table of Contents
 * [installation](#installation)
@@ -15,7 +15,6 @@ To install necessary dependencies, run the following command:
 ```
 npm i
 ```
-Ensure that you have MySQL installed as well as an account created!
 
 ## Usage
 
@@ -24,20 +23,11 @@ Please see deployed site [here](https://apricot-cupcake-54390.herokuapp.com/)
 First clone the repo and from the command line CD into the directory. Once in the directory follow the [install instructions](#installation) and then follow the following steps:
 
 ### Steps
-1. First create the necessary schema. To do this use the MySQL CLI by running the following commands:
-    ```
-    mysql -u <your username> -p
-    ```
-    the press enter and then put in your password
-
-    Then run the following:
-    ```
-    source ./db/schema.sql
-    ```
-2. Update the configuration file in the config folder to add your MySQL credentials
-3. run ```npm seed``` to seed the database with initial data
-4. Once the database is made and seeded and the configuration is corrected you can then run ```npm start```
-5. go to localhost and port you specified (default is 3001)
+1. After running the npm install command. From the root directory run `npm start`
+2. Once run, go to https://localhost:3000 in your browser. or https://<your api adress>:3000 if testing on mobile
+3. For desktop users there will be an install button on the top left of the screen. Once clicked you will be prompted to install the PWA to your desktop.
+4. For mobile users locate the add to home screen option and use that.
+5. The last two steps are also applicable for those using the deployed link
 
 ## License
 This project is licensed under the MIT.
