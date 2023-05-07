@@ -3,8 +3,9 @@
 ![MIT license](https://img.shields.io/badge/license-MIT-blue)
 ## Description 
 
-JATE is a test editor that will keep your work saved. JATE also offers javascript syntax highlighting so you can write out your javascript code and be able to read it with ease. 
+JATE is a text editor that will keep your work saved. JATE also offers javascript syntax highlighting so you can write out your javascript code and be able to read it with ease. 
 
+![JATE Deployed](./JATE_screenshot.PNG)
 ## Table of Contents
 * [installation](#installation)
 * [Usage](#usage)
@@ -18,7 +19,7 @@ npm i
 
 ## Usage
 
-Please see deployed site [here](https://apricot-cupcake-54390.herokuapp.com/)
+Please see deployed site [here](https://dry-lowlands-41404.herokuapp.com//)
 
 First clone the repo and from the command line CD into the directory. Once in the directory follow the [install instructions](#installation) and then follow the following steps:
 
